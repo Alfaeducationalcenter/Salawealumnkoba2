@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SALAWE ALUMNI KOBA</title>
+<style>
+*{box-sizing:border-box;font-family:Arial}body{margin:0;background:#0a1142;color:#fff;min-height:100vh}
+.top{padding:22px 20px 10px}.top h1{margin:0;font-size:24px;font-weight:900}
+.card{background:#1e1e1e;margin:18px 14px;border-radius:22px;padding:22px 18px}
+.card h2{color:#c8e6ff;margin:0 0 18px;font-size:20px}
+.inp{width:100%;background:#2a2a2a;border:1.5px solid #3a3a3a;color:#ddd;padding:16px;border-radius:14px;margin:8px 0;font-size:15px}
+.btn{width:100%;background:#b77900;color:#fff;border:none;padding:16px;border-radius:14px;font-weight:900;font-size:16px;margin-top:10px}
+.btn2{width:100%;background:#3a3a3a;color:#c8e6ff;border:none;padding:14px;border-radius:14px;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="top"><h1>SALAWE ALUMNI KOBA</h1><small>Wanakikundi 40 | Mchango 1,000/Wiki</small><div style="text-align:center;margin-top:15px"><b>Wamejisajili: 1 / 40</b><br><small>Lengo: Wanakikundi 40</small></div></div>
+<div class="card"><h2>Habari, Emmanuel Maharage - Salio: TZS 0</h2><p>Jumla Uliyochanga: <b>TZS 0</b><br>Wiki Uli yolipa: <b>0/52</b></p><button class="btn" onclick="if(confirm('Changa TZS 1,000 leo?')){let c=parseInt(localStorage.getItem('salio')||0)+1000;localStorage.setItem('salio',c);location.reload();}">+ Changa TZS 1,000 Leo</button><button class="btn2" onclick="localStorage.clear();location.reload()">Toka</button></div>
+<script>
+let s=localStorage.getItem('salio')||0; document.querySelector('.card h2').innerText='Habari, Emmanuel Maharage - Salio: TZS '+s; document.querySelector('.card p').innerHTML='Jumla Uliyochanga: <b>TZS '+s+'</b><br>Wiki Uli yolipa: <b>'+(s/1000)+'/52</b>';
+</script>
+</body>
+</html>
